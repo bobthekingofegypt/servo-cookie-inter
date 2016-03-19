@@ -6,7 +6,7 @@ Requirements
 * Rust
 * Python
 
-First clone pywebsockets
+First clone pywebsockets into this projects folder
 
 ```
 git clone https://github.com/google/pywebsocket.git
