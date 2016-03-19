@@ -1,0 +1,7 @@
+[package]
+name = "test-websocket"
+version = "0.1.0"
+authors = ["Bob <bobthekingofegypt@googlemail.com>"]
+
+[dependencies]
+websocket = "=0.15.2"

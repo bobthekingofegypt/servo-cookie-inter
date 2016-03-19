@@ -1,0 +1,33 @@
+Servo cookie intermittent issue
+
+To run this mess of a replication attempt ...
+
+Requirements
+* Rust
+* Python
+
+First clone pywebsockets
+
+```
+git clone https://github.com/google/pywebsocket.git
+```
+
+Then fire up a websocket server using the custom handlers
+
+```
+PYTHONPATH=./pywebsocket python pywebsocket/mod_pywebsocket/standalone.py -d ./handlers -p 7777
+```
+
+Then repeat the rust program continuously for as long as it takes, I just do
+
+```
+while sleep 1; do cargo run; done
+```
+
+or if I want to do it faster
+
+```
+while true; do cargo run; done;
+```
+
+It should eventually just lock up, if you are running a network monitor you may see the issue.
