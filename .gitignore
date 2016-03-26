@@ -1,3 +1,4 @@
 pywebsocket/
 target/
 venv/
+.vagrant
